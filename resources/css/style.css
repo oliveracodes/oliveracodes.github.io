@@ -1,0 +1,750 @@
+/*
+  background: #252627;
+  text: #fff;
+  link: #3DBC8B;
+  linkHover: #95DE75;
+  yellowFriend: #F9F871;
+  purpleFriend: #FF6EF4;
+  orangeFriend: #FF8690;
+  grayFriend: #404248;
+*/
+
+/*********** BASIC SETUP ***********/
+
+::-moz-selection {
+  color: #fff;
+  background: #ff6ef4;
+}
+
+::selection {
+  color: #fff;
+  background: #ff6ef4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #252627;
+  color: #fff;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  text-transform: lowercase;
+  cursor: default;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 0.1em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*********** HEADINGS ***********/
+/* h1, h2, and h3 respectively */
+
+.display-1,
+.display-2,
+.display-3,
+.display-course {
+  text-transform: uppercase;
+  color: #f9f871;
+}
+
+.display-1 {
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 240%;
+  word-spacing: 4px;
+}
+
+.display-1:after {
+  display: block;
+  height: 2px;
+  background-color: #ff6ef4;
+  content: ' '; /* whenever we do an after pseudo-class we have to specify its content, so in this case we don't want any words to appear */
+  width: 100%;
+  margin-top: 20px;
+  /* margin: 0 auto; if we want it positioned in the center */
+}
+
+.display-2 {
+  letter-spacing: 1px;
+  font-size: 180%;
+  word-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.display-3 {
+  font-size: 120%;
+  margin-bottom: 15px;
+}
+
+/* PARAGRAPHS */
+
+.lead {
+  line-height: 145%;
+  font-size: 90%;
+  padding: 1em 0;
+}
+
+/*********** SIDEBAR NAVIGATION ***********/
+
+.sidenav {
+  height: 100%;
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #404248;
+  overflow-x: hidden;
+  padding-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.sidenav ul {
+  list-style: none;
+}
+
+/* the navigation menu icons */
+.sidenav i {
+  color: #3dbc8b;
+}
+
+.sidenav .active {
+  color: #95de75;
+  font-size: 125%;
+}
+
+/* the navigation menu links */
+.sidenav a {
+  text-decoration: none;
+  font-size: 70%;
+  color: #3dbc8b;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* when you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #95de75;
+}
+
+.sidenav ul li i {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.sidenav ul li:hover i {
+  display: none;
+}
+
+.sidenav ul li a {
+  display: none;
+}
+
+.sidenav ul li:hover a {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/*********** LOGO IN NAVBAR ***********/
+
+header {
+  position: absolute;
+  top: 15px;
+  left: 20px; /* sidenav is 60px, image is 20px, 40px are left - 20px on each side*/
+  z-index: 9999;
+}
+
+header img {
+  width: 20px;
+  height: auto;
+}
+
+/*********** MADE IN NAVBAR ***********/
+
+footer {
+  width: 40px;
+  position: absolute;
+  bottom: 15px;
+  left: 10px; /* sidenav is 60px, footer is 40px, 20px are left - 10px on each side */
+  font-size: 55%;
+  color: #ff8690;
+}
+
+/*********** MAIN CONTENT ***********/
+
+.main {
+  max-width: 684px;
+  margin-left: 100px; /* same as the width of the sidebar */
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; /* aligns items vertically */
+}
+
+.main-home {
+  margin-left: 60px; /* same as the width of the sidebar */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; /* aligns items vertically */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; /* aligns items horizontally */
+}
+
+/*********** HOME SECTION ***********/
+
+.home-background {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(37, 38, 39, 0.9)),
+      to(rgba(37, 38, 39, 0.9))
+    ),
+    url(../img/code-min.jpg);
+  background-image: linear-gradient(
+      rgba(37, 38, 39, 0.9),
+      rgba(37, 38, 39, 0.9)
+    ),
+    url(../img/code-min.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.greeting {
+  font-size: 230%;
+  color: #ff6ef4;
+}
+
+.name {
+  font-size: 230%;
+  color: #f9f871;
+}
+
+.profession {
+  letter-spacing: 0.15em;
+  color: #f9f871;
+}
+
+.knowledge {
+  margin-right: 1em;
+  font-size: 80%;
+  color: #ff8690;
+}
+
+.typewriter {
+  border-right: 0.1em solid #ddd;
+  -webkit-animation: blink-caret 0.75s step-end infinite;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+/* the typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ddd;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ddd;
+  }
+}
+
+.new-output {
+  display: inline-block;
+}
+
+.new-output:after {
+  display: inline-block;
+  vertical-align: -0.25em;
+  width: 0.05em;
+  height: 1.5em;
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+  margin-left: 5px;
+  background: #ddd;
+  -webkit-animation: cursor-blink 1.25s steps(1) infinite;
+  animation: cursor-blink 1.25s steps(1) infinite;
+  content: '';
+}
+
+/* the new-output cursor effect */
+@-webkit-keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.contact {
+  margin-right: 0.25em;
+  margin-top: 0.5em;
+}
+
+.contact:link,
+.contact:visited {
+  display: inline-block; /* it won't force a line break but it can have some padding and margin just like the block elements */
+  padding: 0 0.2em;
+  font-size: 200%;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact:hover,
+.contact:active {
+  color: #ff6ef4;
+}
+
+/*********** ABOUT & WORK SECTIONS ***********/
+
+.background {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(37, 38, 39, 0.8)),
+      to(rgba(37, 38, 39, 0.8))
+    ),
+    url(../img/code-pixelated-dark-min.jpg);
+  background-image: linear-gradient(
+      rgba(37, 38, 39, 0.8),
+      rgba(37, 38, 39, 0.8)
+    ),
+    url(../img/code-pixelated-dark-min.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/*********** ABOUT SECTION ***********/
+
+/* SOCIAL LINKS */
+
+.social-links {
+  position: relative;
+}
+
+#socBtn {
+  position: absolute;
+  top: -10px;
+  right: 25px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 40px;
+  color: #252627;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#socBtn:hover {
+  background: #ff6ef4;
+}
+
+.disp {
+  -webkit-transform: scale(0) rotate(90deg);
+  transform: scale(0) rotate(90deg);
+  opacity: 0;
+}
+
+.sub-btn {
+  position: absolute;
+  top: -10px;
+  right: 25px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.sub-btn:hover {
+  background: #ff6ef4;
+  -webkit-box-shadow: 0px 0px 10px 0px #1e2440;
+  box-shadow: 0px 0px 10px 0px #1e2440;
+}
+
+#socBtn i,
+.sub-btn i {
+  text-decoration: none;
+  color: #252627;
+  font-size: 100%;
+}
+
+#a,
+#b,
+#minusBtn {
+  margin-left: 0;
+  margin-top: 0;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.a-clicked {
+  opacity: 1;
+  margin-right: 45px !important;
+  margin-top: 0 !important;
+  -webkit-transform: rotate(0deg) scale(0.75) !important;
+  transform: rotate(0deg) scale(0.75) !important;
+}
+
+.a-clicked:hover {
+  -webkit-transform: scale(0.85) !important;
+  transform: scale(0.85) !important;
+}
+
+.b-clicked {
+  opacity: 1;
+  margin-right: 105px !important;
+  margin-top: 0 !important;
+  -webkit-transform: rotate(0deg) scale(1) !important;
+  transform: rotate(0deg) scale(1) !important;
+}
+
+.b-clicked:hover {
+  -webkit-transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
+}
+
+.minus-clicked {
+  opacity: 1;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+  -webkit-transform: scale(0.4) rotate(0deg) !important;
+  transform: scale(0.4) rotate(0deg) !important;
+}
+
+.minus-clicked:hover {
+  -webkit-transform: scale(0.5) !important;
+  transform: scale(0.5) !important;
+}
+
+/*********** WORK SECTION ***********/
+
+.work-img {
+  /* width: 100%; */
+  width: 70%;
+  margin: 0 15%;
+  height: auto;
+}
+
+blockquote {
+  padding: 0;
+  font-style: italic;
+  line-height: 145%;
+  margin-top: 40px;
+  font-size: 80%;
+}
+
+cite {
+  color: #f9f871;
+  font-size: 125%;
+  margin: 0 0 0.5em 1.5em;
+  display: block;
+  position: relative;
+}
+
+cite:before {
+  color: #ff6ef4;
+  font-style: normal;
+  font-family: 'captainicon';
+  content: '\e681';
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: -1.5em;
+  -webkit-transform: scale(0.85);
+  transform: scale(0.85);
+}
+
+.visit-work:link,
+.visit-work:visited {
+  display: inline-block; /* it won't force a line break but it can have some padding and margin just like the block elements */
+  padding: 0 0.2em;
+  font-size: 125%;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.visit-work:hover,
+.visit-work:active {
+  color: #ff6ef4;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.btn-work {
+  cursor: pointer;
+  margin: 0.5em 1.5em;
+  font-size: 100%;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.btn-work:hover,
+.btn-work:active {
+  color: #ff6ef4;
+}
+
+.Wallop-item {
+  margin-top: 20px;
+}
+
+/* .Wallop-list:after {
+  display: block;
+  height: 2px;
+  background-color: #FF6EF4;
+  content: " ";
+  width: 100%;
+} */
+
+/*********** FADE IN ANIMATION FOR THE SECTIONS ***********/
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 1 forwards;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+.is-paused {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/*********** HOVER ANIMATION FOR THE ICONS ***********/
+/* hover.css - http://ianlunn.github.io/Hover/ */
+
+/* grow gotate - for the contact paper plane in home section */
+.hvr-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.hvr-grow-rotate:hover,
+.hvr-grow-rotate:focus,
+.hvr-grow-rotate:active {
+  -webkit-transform: scale(1.1) rotate(8deg);
+  transform: scale(1.1) rotate(8deg);
+}
+
+/* grow - for the links in work section */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*********** TOOLTIP ***********/
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.inner {
+  padding: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+  border-bottom: 2px solid #ff6ef4;
+  font-size: 12px;
+  white-space: nowrap;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.3s linear;
+}
+
+.tooltip:hover .inner {
+  top: 125%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.inner:before {
+  content: '';
+  background-color: #252627;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  visibility: hidden;
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: 0.3s linear, transform 0s 0.3s linear;
+}
+
+.tooltip:hover .inner:before {
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.3s linear;
+}

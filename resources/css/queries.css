@@ -1,0 +1,409 @@
+/* Big tablets (widths smaller than the 1140px row): from 1024px to 1200px */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablets in portrait mode to big tablets: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  /* SIDEBAR NAVIGATION */
+
+  .sidenav {
+    width: 60px;
+  }
+
+  .sidenav .active {
+    font-size: 125%;
+  }
+
+  .sidenav a {
+    font-size: 70%;
+  }
+
+  /* ----- HEADINGS ----- */
+  /* h1, h2, and h3 respectively */
+
+  .display-1 {
+    font-size: 200%;
+  }
+
+  /* PARAGRAPHS */
+
+  .lead {
+    line-height: 145%;
+    font-size: 85%;
+    padding: 1em 0;
+  }
+
+  /* HOME */
+
+  .main-home {
+    max-width: 684px;
+    margin: 0 auto;
+  }
+
+  .greeting {
+    font-size: 156%;
+  }
+
+  .name {
+    font-size: 156%;
+  }
+
+  .profession {
+    font-size: 74%;
+    letter-spacing: 0.1em;
+  }
+
+  .knowledge {
+    font-size: 70%;
+    margin-top: -0.5em;
+  }
+
+  .typewriter {
+    font-size: 74%;
+    overflow: visible;
+    border-right: 0.1em solid #f9f871;
+    letter-spacing: 0.1em;
+  }
+
+  .new-output:after {
+    vertical-align: -0.25em;
+    width: 0.05em;
+    height: 1.5em;
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+    margin-left: 5px;
+  }
+
+  .contact:link,
+  .contact:visited {
+    font-size: 160%;
+  }
+
+  /* ABOUT & WORK SECTIONS */
+
+  .main {
+    max-width: 684px;
+    margin-left: 100px; /* same as the width of the sidebar */
+    margin-right: 40px;
+    padding: 0 10px;
+  }
+
+  #socBtn,
+  .sub-btn {
+    right: 23px;
+    height: 36px;
+    width: 36px;
+    border-radius: 36px;
+    line-height: 36px;
+  }
+
+  #socBtn i,
+  .sub-btn i {
+    font-size: 90%;
+  }
+
+  .a-clicked {
+    margin-right: 41px !important;
+    margin-top: 0 !important;
+  }
+
+  .b-clicked {
+    margin-right: 93px !important;
+    margin-top: 0 !important;
+  }
+
+  blockquote {
+    font-size: 75%;
+  }
+
+  cite {
+    font-size: 120%;
+  }
+
+  .btn-work {
+    font-size: 90%;
+  }
+
+  .visit-work:link,
+  .visit-work:visited {
+    font-size: 120%;
+  }
+}
+
+/* Larger phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  /* SIDEBAR NAVIGATION */
+
+  .sidenav {
+    width: 50px;
+  }
+
+  .sidenav .active {
+    font-size: 115%;
+  }
+
+  .sidenav a {
+    font-size: 70%;
+  }
+
+  /* ----- HEADINGS ----- */
+  /* h1, h2, and h3 respectively */
+
+  .display-1 {
+    font-size: 175%;
+  }
+
+  /* PARAGRAPHS */
+
+  .lead {
+    line-height: 135%;
+    font-size: 85%;
+    padding: 1em 0;
+  }
+
+  /* HOME */
+
+  .main-home {
+    max-width: 684px;
+    margin-left: 50px; /* same as the width of the sidebar */
+  }
+
+  .greeting {
+    font-size: 175%;
+    display: block;
+  }
+
+  .name {
+    font-size: 150%;
+  }
+
+  .profession {
+    font-size: 53%;
+    letter-spacing: 0.1em;
+  }
+
+  .knowledge {
+    margin-right: 0em;
+    font-size: 70%;
+    margin-top: -1em;
+  }
+
+  .typewriter {
+    font-size: 53%;
+    overflow: visible;
+    border-right: 0.1em solid #f9f871;
+    letter-spacing: 0.1em;
+  }
+
+  .new-output:after {
+    vertical-align: -0.25em;
+    width: 0.05em;
+    height: 1.5em;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  .contact {
+    margin-right: 0em;
+  }
+
+  .contact:link,
+  .contact:visited {
+    font-size: 145%;
+  }
+
+  /* ABOUT & WORK SECTIONS */
+
+  .main {
+    max-width: 684px;
+    margin-left: 70px; /* same as the width of the sidebar + some margin */
+    margin-right: 20px;
+    padding: 0 10px;
+  }
+
+  #socBtn,
+  .sub-btn {
+    right: 21px;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    line-height: 32px;
+  }
+
+  #socBtn i,
+  .sub-btn i {
+    font-size: 80%;
+  }
+
+  .a-clicked {
+    margin-right: 37px !important;
+    margin-top: 0 !important;
+  }
+
+  .b-clicked {
+    margin-right: 89px !important;
+    margin-top: 0 !important;
+  }
+
+  blockquote {
+    font-size: 70%;
+  }
+
+  cite {
+    font-size: 115%;
+  }
+
+  .btn-work {
+    font-size: 80%;
+  }
+
+  .visit-work:link,
+  .visit-work:visited {
+    font-size: 115%;
+  }
+
+  /* HEADER */
+
+  header {
+    left: 15px; /* sidenav is 50px, image is 20px, 30px are left - 15px on each side*/
+  }
+
+  /* FOOTER */
+
+  footer {
+    left: 5px; /* sidenav is 50px, footer is 40px, 10px are left - 5px on each side */
+  }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  /* SIDEBAR NAVIGATION */
+
+  .sidenav {
+    width: 45px;
+  }
+
+  .sidenav .active {
+    font-size: 110%;
+  }
+
+  .sidenav a {
+    font-size: 55%;
+  }
+
+  /* ----- HEADINGS ----- */
+  /* h1, h2, and h3 respectively */
+
+  .display-1 {
+    font-size: 150%;
+  }
+
+  /* PARAGRAPHS */
+
+  .lead {
+    line-height: 125%;
+    font-size: 80%;
+    padding: 1em 0;
+  }
+
+  /* HOME */
+
+  .main-home {
+    max-width: 684px;
+    margin-left: 45px; /* same as the width of the sidebar */
+  }
+
+  .greeting {
+    font-size: 115%;
+    display: block;
+  }
+
+  .name {
+    font-size: 95%;
+  }
+
+  .profession {
+    font-size: 41%;
+    letter-spacing: 0em;
+  }
+
+  .knowledge {
+    font-size: 55%;
+    margin-top: -1.5em;
+  }
+
+  .typewriter {
+    font-size: 41%;
+    overflow: auto;
+    border-right: 0.1em solid #f9f871;
+    letter-spacing: 0em;
+  }
+
+  .contact:link,
+  .contact:visited {
+    font-size: 135%;
+  }
+
+  /* ABOUT & WORK SECTIONS */
+
+  .main {
+    max-width: 684px;
+    margin-left: 60px; /* same as the width of the sidebar + some margin */
+    margin-right: 15px;
+    padding: 0 10px;
+  }
+
+  #socBtn,
+  .sub-btn {
+    right: 19px;
+    height: 28px;
+    width: 28px;
+    border-radius: 28px;
+    line-height: 28px;
+  }
+
+  #socBtn i,
+  .sub-btn i {
+    font-size: 70%;
+  }
+
+  .a-clicked {
+    margin-right: 33px !important;
+    margin-top: 0 !important;
+  }
+
+  .b-clicked {
+    margin-right: 81px !important;
+    margin-top: 0 !important;
+  }
+
+  blockquote {
+    font-size: 65%;
+  }
+
+  cite {
+    font-size: 110%;
+  }
+
+  .btn-work {
+    font-size: 70%;
+  }
+
+  .visit-work:link,
+  .visit-work:visited {
+    font-size: 110%;
+  }
+
+  /* HEADER */
+
+  header {
+    left: 12.5px; /* sidenav is 45px, image is 20px, 25px are left - 12.5px on each side*/
+  }
+
+  /* FOOTER */
+
+  footer {
+    left: 2.5px; /* sidenav is 45px, footer is 40px, 5px are left - 2.5px on each side */
+    font-size: 50%;
+  }
+}
